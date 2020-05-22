@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>NELSON JR</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="shortcut icon" href="assets/css/favicon.icon" type="image/x-icon" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Trabalhos</span></a>
+					<!--<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>-->
+						<a href="https://www.instagram.com/machadojuniornelson/" class="icon brands fa-instagram"><span>Instagram</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Nelson Jr</h1>
+									<p>Músico Multi-instrumentista<br>Professor de Música<br>Em busca do Shape</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>Veja meu trabalho</span></span>
+									<img src="images/nelson-5.jpeg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Trabalhos</h2>
+								</header>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a id="nelson-1" href="#preview" class="image fit" onclick="onClickInImage(this.id)"><img src="images/nelson-1.jpeg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a id="nelson-2" href="#preview" class="image fit" onclick="onClickInImage(this.id)"><img src="images/nelson-2.jpeg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a id="nelson-3" href="#preview" class="image fit" onclick="onClickInImage(this.id)"><img src="images/nelson-3.jpeg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a id="nelson-4" href="#preview" class="image fit" onclick="onClickInImage(this.id)"><img src="images/nelson-4.jpeg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a id="nelson-6" href="#preview" class="image fit" onclick="onClickInImage(this.id)"><img src="images/nelson-6.jpeg" alt=""></a>
+										</div>
+									</div>
+								</section>
+							</article>
+
+							<script>
+
+								function onClickInImage(idImage) {
+									let sourceImage = "images/" + idImage + ".jpeg";
+									//document.getElementById(`preview-image`).src = sourceImage;
+									document.getElementById("preview-image").src = `images/${idImage}.jpeg`;
+								}
+
+							</script>
+						
+						<!-- Contact -->
+
+							<article id="preview" class="panel">
+								<header>
+									<h2>Fotos</h2>
+								</header>
+								<div class="text-center">
+									<img id="preview-image" src="images/nelson-4.jpeg" width="500px">
+								</div>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>Design: <a href="https://www.instagram.com/gustavo._.rickli/">Gustavo Rickli</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
